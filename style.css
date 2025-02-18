@@ -1,0 +1,450 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #007bff;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #333;
+    padding: 20px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav .logo h1 {
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Hero Section */
+.hero {
+    background: url('hero-bg.jpg') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.hero .btn {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.hero .btn:hover {
+    background-color: #555;
+}
+
+/* Rent a Bike Section Styling */
+#rent-bike {
+    background-color: #f4f4f4;
+    padding: 50px 20px;
+    text-align: center;
+}
+#rent-bike h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;}
+
+.bike-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.bike-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(33.333% - 20px);
+    transition: transform 0.3s ease;
+}
+
+.bike-item:hover {
+    transform: translateY(-10px); /* Lift effect on hover */
+}
+
+.bike-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+h3 {
+    color: #333;
+    font-size: 1.6em;
+    margin-top: 15px;
+}
+
+.bike-description {
+    color: #777;
+    font-size: 1em;
+    margin: 10px 0;
+}
+
+.bike-price {
+    color: #1a1a1a;
+    font-size: 1.4em;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.rent-button {
+    background-color: #28a745;
+    color: white;
+    font-size: 1.1em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.rent-button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+@media screen and (max-width: 768px) {
+    .bike-item {
+        width: calc(50% - 20px); /* Two items per row on smaller screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .bike-item {
+        width: 100%; /* One item per row on very small screens */
+    }
+}
+
+/* Car Section */
+#cars {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+#cars h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.car-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+
+.car-item {
+    background-color: #fff;
+    padding: 20px;
+    width: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(33.333% - 20px);
+    transition: transform 0.3s ease;
+}
+
+
+.car-item:hover {
+    transform: translateY(-10px);}
+
+.car-item img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.car-item h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.car-item p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.car-item .btn {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.car-item .btn:hover {
+    background-color: #555;
+}
+
+/* Services Section */
+#services {
+    padding: 50px 20px;
+    background-color: #e7e7e7;
+    text-align: center;
+}
+
+.service-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service-item {
+    background-color: #fff;
+    padding: 20px;
+    width: 280px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.service-item h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.service-item p {
+    font-size: 1.1em;
+}
+
+/* Contact Section */
+#contact {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+#contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contact input, #contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#contact button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+#contact button:hover {
+    background-color: #555;
+}
+
+/* Footer */
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 20px;
+    min-width: 220px;
+}
+
+.footer-section h3 {
+    font-size: 1.6em;
+    margin-bottom: 15px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+/* Follow Us Section Styles */
+.follow-us {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.follow-us h3 {
+    font-size: 1.6em;
+    margin-bottom: 15px;
+    color: #fff; /* White text color for heading */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between icons */
+    margin-top: 10px;
+}
+
+.social-icons .social-icon {
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icons .social-icon img {
+    width: 40px; /* Set the size of the icons */
+    height: 40px;
+    border-radius: 50%; /* Make the icons circular */
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icons .social-icon:hover img {
+    transform: scale(1.1); /* Slight zoom-in effect on hover */
+}
+
+.social-icons .social-icon img:active {
+    transform: scale(0.95); /* Slightly shrink on click */
+}
+
+/* Responsive Design for smaller screens */
+@media screen and (max-width: 768px) {
+    .follow-us h3 {
+        font-size: 1.4em;
+    }
+
+    .social-icons {
+        gap: 15px; /* Smaller gap between icons on mobile */
+    }
+}
+
+
+.footer-section p {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #ccc;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 10px 0;
+}
+
+.footer-section ul li a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.footer-section ul li a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.social-icons {
+    margin-top: 15px;
+}
+
+.social-icons a {
+    margin: 0 15px;
+    display: inline-block;
+}
+
+.social-icons img {
+    width: 35px;
+    height: 35px;
+    transition: transform 0.3s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+
+.footer-bottom {
+    background-color: #222;
+    padding: 20px 0;
+    font-size: 1em;
+    color: #aaa;
+    margin-top: 30px;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .social-icons {
+        text-align: center;
+        margin-top: 15px;
+    }
+}
+
